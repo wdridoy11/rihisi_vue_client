@@ -1,10 +1,14 @@
 <script setup>
 import Home from '../src/components/Home.vue'
+import Card from '../src/components/Card.vue'
+import Details from '../src/components/Details.vue'
 </script>
 
 <template>
   <main>
-    <Home></Home>
+    <!-- <Home></Home> -->
+    <!-- <Card></Card> -->
+    <Details></Details>
   </main>
 </template>
 
