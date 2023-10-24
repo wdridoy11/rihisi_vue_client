@@ -8,6 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@syncfusion/ej2-vue-grids": "^23.1.42",
+    "@syncfusion/ej2-vue-notifications": "^23.1.40",
     "axios": "^1.5.1",
     "vue": "^3.3.4"
   },
