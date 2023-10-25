@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div>
         <div class="flex gap-2 items-center bg-white px-2 py-1 rounded-md mr-3 mb-2">
             <p class="text-base font-normal">Sort by:</p>
             <select class="py-2 focus:outline-none cursor-pointer">

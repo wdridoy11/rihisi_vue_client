@@ -1,3 +1,13 @@
+
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showTime = ref(false);
+    function toggleTime() {
+      showTime.value = !showTime.value;
+    }
+</script>
+
 <template>
     <div>
         <div class="bg-white p-3 rounded-md border-r mb-2 relative">
@@ -34,19 +44,3 @@
         </div>
     </div>
 </template>
-
-
-<script>
-export default {
-  data() {
-    return {
-      showTime: false,
-    };
-  },
-  methods: {
-    toggleTime() {
-      this.showTime = !this.showTime;
-    },
-  },
-};
-</script>

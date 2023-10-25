@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showTutorCategories = ref(false);
+    function toggleTutorCategories() {
+       showTutorCategories.value = !showTutorCategories.value;
+    }
+</script>
+
 <template>
     <div>
         <div class="bg-white p-3 rounded-md border-r relative">
@@ -28,19 +37,6 @@
 </template>
 
 
-<script>
-export default {
-  data() {
-    return {
-        showTutorCategories: false,
-    };
-  },
-  methods: {
-    toggleTutorCategories() {
-      this.showTutorCategories = !this.showTutorCategories;
-    },
-  },
-};
-import { ChevronDownIcon } from '@heroicons/vue/24/solid'
-</script>
+
+
 

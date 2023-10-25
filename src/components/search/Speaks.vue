@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showSpeaks = ref(false);
+    function toggleSpeaks() {
+        showSpeaks.value = !showSpeaks.value;
+    }
+</script>
+
 <template>
     <div>
         <div class="bg-white p-3 rounded-md border-r relative">
@@ -39,17 +48,3 @@
 </template>
 
 
-<script>
-export default {
-  data() {
-    return {
-      showSpeaks: false,
-    };
-  },
-  methods: {
-    toggleSpeaks() {
-      this.showSpeaks = !this.showSpeaks;
-    },
-  },
-};
-</script>

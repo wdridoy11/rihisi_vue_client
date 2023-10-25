@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import Sort from './Sort.vue';
     import Time from './Time.vue';
     import Price from './Price.vue';

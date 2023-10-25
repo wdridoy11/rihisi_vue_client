@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showLanguage = ref(false);
+    function toggleLanguage() {
+      showLanguage.value = !showLanguage.value;
+    }
+</script>
+
 <template>
     <div class="bg-white p-3 rounded-md border-r mb-2 relative">
         <h5 class="uppercase text-sm font-normal text-[#8a959e]">I wnat to learn</h5>
@@ -23,18 +32,3 @@
     </div>
 </template>
 
-
-<script>
-export default {
-  data() {
-    return {
-      showLanguage: false,
-    };
-  },
-  methods: {
-    toggleLanguage() {
-      this.showLanguage = !this.showLanguage;
-    },
-  },
-};
-</script>

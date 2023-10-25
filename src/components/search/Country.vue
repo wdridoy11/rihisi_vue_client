@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showCountry = ref(false);
+    function toggleCountry() {
+        showCountry.value = !showCountry.value;
+    }
+</script>
+
 <template>
     <div>
         <div class="bg-white p-3 rounded-md border-r relative mb-2">
@@ -52,17 +61,3 @@
 </template>
 
 
-<script>
-export default {
-  data() {
-    return {
-      showCountry: false,
-    };
-  },
-  methods: {
-    toggleCountry() {
-      this.showCountry = !this.showCountry;
-    },
-  },
-};
-</script>

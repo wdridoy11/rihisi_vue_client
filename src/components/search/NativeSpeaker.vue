@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showNativeSpeaker = ref(false);
+    function toggleNativeSpeaker() {
+      showNativeSpeaker.value = !showNativeSpeaker.value;
+    }
+</script>
+
 <template>
     <div>
         <div class="bg-white p-3 rounded-md border-r relative">
@@ -19,17 +28,3 @@
 </template>
 
 
-<script>
-export default {
-  data() {
-    return {
-      showNativeSpeaker: false,
-    };
-  },
-  methods: {
-    toggleNativeSpeaker() {
-      this.showNativeSpeaker = !this.showNativeSpeaker;
-    },
-  },
-};
-</script>

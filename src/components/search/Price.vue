@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showPrice = ref(false);
+    function togglePrice() {
+      showPrice.value = !showPrice.value;
+    }
+</script>
+
 <template>
      <div>
          <div class="bg-white p-3 rounded-md border-r mb-2 relative">
@@ -18,18 +27,37 @@
 </template>
 
 
-<script>
-import "./price.css"
-export default {
-  data() {
-    return {
-      showPrice: false,
-    };
-  },
-  methods: {
-    togglePrice() {
-      this.showPrice = !this.showPrice;
-    },
-  },
-};
-</script>
+<style >
+.range-slider {
+    width:90%;
+    position: relative;
+    margin: 15px auto 30px auto;
+  }
+  
+  input[type=range] {
+    width: 100%;
+    background: #3BB3BD; 
+    position: absolute;
+    left: 0;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 150px;
+    border-radius: 50%;
+    background: #36b37e;
+    cursor: pointer;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #3BB3BD;
+    border-radius: 3px;
+    border: none;
+  }
+</style>

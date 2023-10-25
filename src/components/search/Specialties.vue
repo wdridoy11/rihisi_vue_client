@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    
+    const showSpecialties = ref(false);
+    function toggleSpecialties() {
+      showSpecialties.value = !showSpecialties.value;
+    }
+</script>
+
 <template>
     <div>
         <div class="bg-white p-3 rounded-md border-r relative">
@@ -29,19 +38,3 @@
         </div>
     </div>
 </template>
-
-
-<script>
-export default {
-  data() {
-    return {
-      showSpecialties: false,
-    };
-  },
-  methods: {
-    toggleSpecialties() {
-      this.showSpecialties = !this.showSpecialties;
-    },
-  },
-};
-</script>
