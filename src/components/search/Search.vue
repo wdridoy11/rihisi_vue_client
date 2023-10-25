@@ -1,4 +1,5 @@
 <script setup>
+    import Sort from './Sort.vue';
     import Time from './Time.vue';
     import Price from './Price.vue';
     import Speaks from './Speaks.vue';
