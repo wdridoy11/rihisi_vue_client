@@ -9,8 +9,8 @@ import Search from './components/search/Search.vue'
 <template>
   <main>
     <!-- <Home></Home> -->
-    <TutorDetails></TutorDetails>
-    <!-- <Search></Search> -->
+    <!-- <TutorDetails></TutorDetails> -->
+    <Search></Search>
   </main>
 </template>
 

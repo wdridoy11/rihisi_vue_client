@@ -41,5 +41,6 @@ export default {
     },
   },
 };
+import { ChevronDownIcon } from '@heroicons/vue/24/solid'
 </script>
 
