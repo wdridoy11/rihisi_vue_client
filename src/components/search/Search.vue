@@ -1,14 +1,13 @@
 <script setup>
-    import Sort from '../components/search/Sort.vue';
-    import Time from '../components/search/Time.vue';
-    import Price from '../components/search/Price.vue';
-    import Speaks from '../components/search/Speaks.vue';
-    import Country from '../components/search/Country.vue';
-    import Language from '../components/search/Language.vue';
-    import Categories from '../components/search/Categories.vue';
-    import SearchForm from '../components/search/Search_form.vue';
-    import Specialties from '../components/search/Specialties.vue';
-    import NativeSpeaker from '../components/search/Native_Speaker.vue';
+    import Time from './Time.vue';
+    import Price from './Price.vue';
+    import Speaks from './Speaks.vue';
+    import Country from './Country.vue';
+    import Language from './Language.vue';
+    import Categories from './Categories.vue';
+    import SearchForm from './SearchForm.vue';
+    import Specialties from './Specialties.vue';
+    import NativeSpeaker from './NativeSpeaker.vue';
 </script>
 
 <template>
