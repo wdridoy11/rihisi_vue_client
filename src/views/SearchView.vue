@@ -1,10 +1,9 @@
 <script setup lang="ts">
     import Search from '../components/search/Search.vue';
-    import Home from '../pages/Home.vue';
+    import SearchResults from '../components/searchResults/SearchResults.vue';
 </script>
 
 <template>
-  <main>
-      <Home />
-  </main>
+    <Search />
+    <SearchResults />
 </template>
