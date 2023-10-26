@@ -12,7 +12,8 @@
     "@syncfusion/ej2-vue-notifications": "^23.1.40",
     "axios": "^1.5.1",
     "font-awesome": "^4.7.0",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
