@@ -15,7 +15,7 @@
           <div class="text-sm font-medium md:order-1 mb-2 md:mb-0">
             <ul class="inline-flex flex-wrap text-sm space-x-6">
               <li>
-                <a class="text-slate-500 underline hover:no-underline" href="#0">About</a>
+                <a class="text-slate-500 underline hover:no-underline" href="/about">About</a>
               </li>
               <li>
                 <a class="text-slate-500 underline hover:no-underline" href="#0">Privacy & Terms</a>

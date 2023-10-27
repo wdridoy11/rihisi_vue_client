@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div class="w-[1216px] mx-auto mt-5 px-5">
+    <div class="w-[1216px] mx-auto px-5">
         <div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-0 mb-3">
                 <div>

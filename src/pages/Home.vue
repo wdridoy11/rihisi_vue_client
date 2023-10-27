@@ -2,7 +2,7 @@
     <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
   
       <!-- Site header -->
-      <Header />
+      <!-- <Header /> -->
   
       <!-- Page content -->
       <main class="grow">
@@ -22,7 +22,7 @@
                   <Boxes />
                 </div>
               </div>
-  
+
               <Sidebar />
   
             </div>
