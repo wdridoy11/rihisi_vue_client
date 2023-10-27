@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@syncfusion/ej2-vue-dropdowns": "^23.1.42",
     "@syncfusion/ej2-vue-grids": "^23.1.42",
     "@syncfusion/ej2-vue-notifications": "^23.1.40",
     "axios": "^1.5.1",

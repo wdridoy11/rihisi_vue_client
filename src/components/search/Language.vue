@@ -1,34 +1,37 @@
 <script setup lang="ts">
-    import { ref } from 'vue'
-    
-    const showLanguage = ref(false);
-    function toggleLanguage() {
-      showLanguage.value = !showLanguage.value;
-    }
+import { DropDownListComponent as EjsDropdownlist } from "@syncfusion/ej2-vue-dropdowns";
+const data = [{ languageData : ['English', 'German', 'Bangla', 'Spanish'] }]  
 </script>
 
+
 <template>
-    <div class="bg-white p-3 rounded-md border-r mb-2 relative">
+    <div id="app" class="bg-white rounded-md border-r p-2">
         <h5 class="uppercase text-sm font-normal text-[#8a959e]">I wnat to learn</h5>
-        <div>
-            <div @click="toggleLanguage" class="flex justify-between text-[#090f19] text-sm font-normal mt-1 cursor-pointer">
-            <input 
-                type="search" 
-                name="language_search" 
-                id="language_search"
-                placeholder="English"
-                class="w-full rounded-md focus:outline-none"
-            >
-        </div>
-            <div class="mt-2 absolute top-14 left-0 bg-white w-full rounded-md z-10" v-if="showLanguage">
-                <ul>
-                    <li class="text-sm py-2 px-4">English</li>
-                    <li class="text-sm py-2 px-4">German</li>
-                    <li class="text-sm py-2 px-4">Bangla</li>
-                    <li class="text-sm py-2 px-4">Spanish</li>
-                </ul>
-            </div>
-        </div>
+      <div id='container' style="width:100%;">
+          <ejs-dropdownlist id='dropdownlist' popupHeight="250px" popupWidth="100%" 
+          :dataSource='data[0].languageData' placeholder='English'></ejs-dropdownlist>
+      </div>
     </div>
 </template>
 
+
+<!-- syncfusion css  -->
+<style>
+    .e-input-group:not(.e-success):not(.e-warning):not(.e-error), 
+    .e-input-group.e-control-wrapper:not(.e-success):not(.e-warning):not(.e-error),
+    .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error), 
+    .e-input-group.e-control-wrapper.e-input-focus:not(.e-success):not(.e-warning):not(.e-error){
+        border: none;
+        box-shadow:none;
+    }
+    .e-input-group.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled), 
+    .e-input-group.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled), 
+    .e-float-input.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled), 
+    .e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled), 
+    .e-float-input.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) 
+    input:not([disabled]), .e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) input:not([disabled]), .e-float-input.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) textarea:not([disabled]), .e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) 
+    textarea:not([disabled]){
+        border: none;
+        box-shadow:none;
+    }
+</style>

@@ -214,7 +214,7 @@
   dependencies:
     "@syncfusion/ej2-base" "~23.1.36"
 
-"@syncfusion/ej2-dropdowns@~23.1.42":
+"@syncfusion/ej2-dropdowns@23.1.42", "@syncfusion/ej2-dropdowns@~23.1.42":
   version "23.1.42"
   resolved "https://registry.yarnpkg.com/@syncfusion/ej2-dropdowns/-/ej2-dropdowns-23.1.42.tgz#7e36d07f37e4d1836a73148736dc3b7d92895f86"
   integrity sha512-oIv7UDyTdnV/bpYUznUF0jtCyfg6gq7Cj+FiSK90c5vtLEe2o2CkeKROEWeay7PwM8il75McWHHCqw7GEMyO7g==
@@ -335,6 +335,15 @@
   integrity sha512-Wm+J3bfNeAa5rIKrgP23ykLSBYPNXMz1NXj4J9PCjDzq8nCiNcxdGNQ1jvYEsgL9MFnqqdODePly31IPJOpcIQ==
   dependencies:
     "@syncfusion/ej2-base" "~23.1.36"
+
+"@syncfusion/ej2-vue-dropdowns@^23.1.42":
+  version "23.1.42"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-vue-dropdowns/-/ej2-vue-dropdowns-23.1.42.tgz#35e8ae76e582ca75d6c64c811e47dc76ef973409"
+  integrity sha512-hNyIs+lGt4VE2DClDGSbX5UdZCLm/OKUMCNn717Elwhozz3nKhzLfztNZw5jIPzaEfp0fNpPj1mcOJa0bL7RGg==
+  dependencies:
+    "@syncfusion/ej2-base" "~23.1.41"
+    "@syncfusion/ej2-dropdowns" "23.1.42"
+    "@syncfusion/ej2-vue-base" "~23.1.36"
 
 "@syncfusion/ej2-vue-grids@^23.1.42":
   version "23.1.42"

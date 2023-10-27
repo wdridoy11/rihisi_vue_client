@@ -5,5 +5,5 @@
 
 <template>
     <Search />
-    <SearchResults />
+    <!-- <SearchResults /> -->
 </template>
