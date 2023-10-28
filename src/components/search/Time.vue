@@ -18,23 +18,23 @@
             </div>
             <div class="mt-2 absolute top-14 left-0 bg-white w-full px-4 py-2 rounded-md z-10" v-if="showTime">
                 <p class="text-sm text-[#090F19] font-medium mb-2">Time of the day, in your time zone</p>
-                <div class="grid grid-cols-3 pb-2">
-                    <div class="border text-center py-2 h-[85px] overflow-hidden">
+                <div class="grid grid-cols-3 gap-2 pb-2">
+                    <div class="border text-center py-2 h-[85px] overflow-hidden cursor-pointer">
                         <img class="w-5 mx-auto text-green-400" src="../../assets/cloud-sun-solid.svg" alt="morning">
                         <p class="text-sm text-[#090F19] mt-1">6-9</p>
                         <small class="text-xs text-[#aeb5bc]">Morning</small>
                     </div>
-                    <div class="border text-center py-2">
+                    <div class="border text-center py-2 h-[85px] overflow-hidden cursor-pointer">
                         <img class="w-5 mx-auto text-green-400" src="../../assets/cloud-sun-solid.svg" alt="morning">
                         <p class="text-sm text-[#090F19] mt-1">9-12</p>
                         <small class="text-xs text-[#aeb5bc]">Late morning</small>
                     </div>
-                    <div class="border text-center py-2">
+                    <div class="border text-center py-2 h-[85px] overflow-hidden cursor-pointer">
                         <img class="w-5 mx-auto text-green-400" src="../../assets/cloud-sun-solid.svg" alt="morning">
                         <p class="text-sm text-[#090F19] mt-1">12-15</p>
                         <small class="text-xs text-[#aeb5bc]">Afternoon</small>
                     </div>
-                    <div class="border text-center py-2">
+                    <div class="border text-center py-2 h-[85px] overflow-hidden cursor-pointer">
                         <img class="w-5 mx-auto text-green-400" src="../../assets/cloud-sun-solid.svg" alt="morning">
                         <p class="text-sm text-[#090F19] mt-1">15-18</p>
                         <small class="text-xs text-[#aeb5bc]">Late afternoon</small>
