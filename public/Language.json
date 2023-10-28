@@ -1,9 +1,0 @@
-{
-    "language" :[
-        { "Id": "1", "language": "English" },
-        { "Id": "2", "language": "German" },
-        { "Id": "3", "language": "Bangla" },
-        { "Id": "4", "language": "Spanish" },
-        { "Id": "5", "language": "Hinde" }
-    ]
-}

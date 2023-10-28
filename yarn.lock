@@ -182,7 +182,7 @@
   dependencies:
     "@syncfusion/ej2-icons" "~23.1.36"
 
-"@syncfusion/ej2-buttons@~23.1.36", "@syncfusion/ej2-buttons@~23.1.39", "@syncfusion/ej2-buttons@~23.1.41", "@syncfusion/ej2-buttons@~23.1.42":
+"@syncfusion/ej2-buttons@23.1.42", "@syncfusion/ej2-buttons@~23.1.36", "@syncfusion/ej2-buttons@~23.1.39", "@syncfusion/ej2-buttons@~23.1.41", "@syncfusion/ej2-buttons@~23.1.42":
   version "23.1.42"
   resolved "https://registry.yarnpkg.com/@syncfusion/ej2-buttons/-/ej2-buttons-23.1.42.tgz#0a1a6a5920217e1e2e6074e1bfff1102b54aec84"
   integrity sha512-dZjv32DmglEzjhlAEGPdd8oQdDeeftM0I1bpiiVqnVip5om6gVelffjO7IvdGIAy8ZkxZOJ6Yt0RdYI8UL1tzA==
@@ -335,6 +335,15 @@
   integrity sha512-Wm+J3bfNeAa5rIKrgP23ykLSBYPNXMz1NXj4J9PCjDzq8nCiNcxdGNQ1jvYEsgL9MFnqqdODePly31IPJOpcIQ==
   dependencies:
     "@syncfusion/ej2-base" "~23.1.36"
+
+"@syncfusion/ej2-vue-buttons@^23.1.42":
+  version "23.1.42"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-vue-buttons/-/ej2-vue-buttons-23.1.42.tgz#c89950408fc9b339a1c7d57a63c84cd50becfea6"
+  integrity sha512-1yHbNPeZ8+HnFIT4eVdW08M//vMIvGPlxdKvbzRFpg7/JIWR8QYhPLT38IKib9kyDQ7EgFvFplW+2PvjKi0USw==
+  dependencies:
+    "@syncfusion/ej2-base" "~23.1.41"
+    "@syncfusion/ej2-buttons" "23.1.42"
+    "@syncfusion/ej2-vue-base" "~23.1.36"
 
 "@syncfusion/ej2-vue-dropdowns@^23.1.42":
   version "23.1.42"

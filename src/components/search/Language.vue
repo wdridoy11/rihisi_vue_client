@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { DropDownListComponent as EjsDropdownlist } from "@syncfusion/ej2-vue-dropdowns";
-const data = [{ languageData : ['English', 'German', 'Bangla', 'Spanish'] }]  
+    import { DropDownListComponent as EjsDropdownlist } from "@syncfusion/ej2-vue-dropdowns";
+    const data = [{ languageData : ['English', 'German', 'Bangla', 'Spanish'] }]  
 </script>
-
 
 <template>
     <div id="app" class="bg-white rounded-md border-r p-2">
@@ -13,7 +12,6 @@ const data = [{ languageData : ['English', 'German', 'Bangla', 'Spanish'] }]
       </div>
     </div>
 </template>
-
 
 <!-- syncfusion css  -->
 <style>
