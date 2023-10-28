@@ -15,11 +15,7 @@
     "axios": "^1.5.1",
     "font-awesome": "^4.7.0",
     "vue": "^3.3.4",
-    "vue-router": "4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-"@fortawesome/free-brands-svg-icons": "^5.15.2",
-"@fortawesome/free-solid-svg-icons": "^5.15.2",
-"@fortawesome/vue-fontawesome": "^3.0.0-3"
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
