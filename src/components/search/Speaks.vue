@@ -3,9 +3,20 @@
         <div id="multiselect-sample">
             <div class="col-lg-8 control-section bg-white p-2 rounded-md">
                 <div class="control-styles">
-                    <ejs-multiselect id='multiselect-checkbox' cssClass="e-specific" :dataSource='countries' :placeholder='checkWaterMark' :fields='checkFields'
-                        :mode='multiMode' :popupHeight='popHeight' popupWidth="220px" :showDropDownIcon='showDropDownIcon' :showSelectAll='showSelectAll'
-                        :enableSelectionOrder='enableSelectionOrder' :filterBarPlaceholder='filterPlaceholder'></ejs-multiselect>
+                    <ejs-multiselect 
+                        id='multiselect-checkbox' 
+                        cssClass="e-specific" 
+                        :dataSource='countries' 
+                        :placeholder='checkWaterMark' 
+                        :fields='checkFields'
+                        :mode='multiMode' 
+                        :popupHeight='popHeight' 
+                        popupWidth="220px" 
+                        :showDropDownIcon='showDropDownIcon' 
+                        :showSelectAll='showSelectAll'
+                        :enableSelectionOrder='enableSelectionOrder' 
+                        :filterBarPlaceholder='filterPlaceholder'>
+                    </ejs-multiselect>
                 </div>
             </div>
         </div>
@@ -15,9 +26,13 @@
 <script>
 import { MultiSelectComponent, CheckBoxSelection } from "@syncfusion/ej2-vue-dropdowns";
 import { CheckBoxComponent } from "@syncfusion/ej2-vue-buttons";
-import data from '../../../public/rihisiDatabase';
 
 export default {
+    data() {
+      return {
+        speaks: null
+      };
+    },
     components: {
         'ejs-multiselect': MultiSelectComponent,
         'ejs-checkbox': CheckBoxComponent
@@ -31,8 +46,19 @@ export default {
             showSelectAll: false,
             showDropDownIcon: true,
             enableSelectionOrder: true,
-            countries:data['speaks'],
+            countries:["speaks"],
         };
+    },
+    mounted() {
+      // loading data Past your API
+      fetch("rihisiDatabase.json")
+        .then((res) => res.json())
+        .then((data) => {
+          this.speaks = data.speaks;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     },
     methods: {
         onChange: function() {

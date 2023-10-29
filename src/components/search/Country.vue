@@ -26,17 +26,16 @@ export default {
         };
     },
     mounted() {
-    // loading data Past your API
-    fetch("rihisiDatabase.json")
-      .then((res) => res.json())
-      .then((data) => {
-        // this.countries = data.countries;
-        console.log();
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  },
+        // loading data Past your API
+        fetch("rihisiDatabase.json")
+          .then((res) => res.json())
+          .then((data) => {
+            this.countries = data.countries;
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+    },
     methods: {
         onChange: function() {
             var checkboxObj = this.$refs.checkboxInstance1.ej2Instances;
