@@ -21,7 +21,7 @@ export default {
             showSelectAll: false,
             showDropDownIcon: true,
             enableSelectionOrder: true,
-            countries:["speaks"],
+            speaks:["speaks"],
         };
     },
     mounted() {
@@ -67,7 +67,7 @@ export default {
                     <ejs-multiselect 
                         id='multiselect-checkbox' 
                         cssClass="e-specific" 
-                        :dataSource='countries' 
+                        :dataSource='speaks' 
                         :placeholder='checkWaterMark' 
                         :fields='checkFields'
                         :mode='multiMode' 
