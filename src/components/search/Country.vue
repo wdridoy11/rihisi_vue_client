@@ -1,24 +1,13 @@
-<template>
-    <div>
-        <div id="multiselect-sample">
-            <div class="col-lg-8 control-section bg-white p-2 rounded-md">
-                <h5 class="uppercase text-sm font-normal text-[#8a959e]">Country of birth</h5>
-                <div class="control-styles">
-                    <ejs-multiselect id='multiselect-checkbox' cssClass="e-specific" :dataSource='countries' :placeholder='checkWaterMark' :fields='checkFields'
-                        :mode='multiMode' :popupHeight='popHeight' :showDropDownIcon='showDropDownIcon' :showSelectAll='showSelectAll'
-                        :enableSelectionOrder='enableSelectionOrder' :filterBarPlaceholder='filterPlaceholder'></ejs-multiselect>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-
 <script>
 import { MultiSelectComponent, CheckBoxSelection } from "@syncfusion/ej2-vue-dropdowns";
 import { CheckBoxComponent } from "@syncfusion/ej2-vue-buttons";
-import data from '../../../public/rihisiDatabase';
 
 export default {
+    data() {
+      return {
+        countries: null
+      };
+    },
     components: {
         'ejs-multiselect': MultiSelectComponent,
         'ejs-checkbox': CheckBoxComponent
@@ -33,9 +22,21 @@ export default {
             showSelectAll: false,
             showDropDownIcon: true,
             enableSelectionOrder: true,
-            countries:data['countries']
+            countries:["countries"]
         };
     },
+    mounted() {
+    // loading data Past your API
+    fetch("rihisiDatabase.json")
+      .then((res) => res.json())
+      .then((data) => {
+        // this.countries = data.countries;
+        console.log();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  },
     methods: {
         onChange: function() {
             var checkboxObj = this.$refs.checkboxInstance1.ej2Instances;
@@ -58,6 +59,33 @@ export default {
     }
 }
 </script>
+
+<template>
+    <div>
+        <div id="multiselect-sample">
+            <div class="col-lg-8 control-section bg-white p-2 rounded-md">
+                <h5 class="uppercase text-sm font-normal text-[#8a959e]">Country of birth</h5>
+                <div class="control-styles">
+                    <ejs-multiselect 
+                        id='multiselect-checkbox' 
+                        cssClass="e-specific" 
+                        :dataSource='countries' 
+                        :placeholder='checkWaterMark' 
+                        :fields='checkFields'
+                        :mode='multiMode' 
+                        :popupHeight='popHeight' 
+                        :showDropDownIcon='showDropDownIcon' 
+                        :showSelectAll='showSelectAll'
+                        :enableSelectionOrder='enableSelectionOrder' 
+                        :filterBarPlaceholder='filterPlaceholder'>
+                    </ejs-multiselect>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
 
 <style scoped>
     .control-styles {

@@ -20,6 +20,12 @@
         { "Name": "United Kingdom", "Code": "GB" },
         { "Name": "United States", "Code": "US" }
     ],
+    "languageData" : [
+        "English",
+        "German",
+        "Bangla",
+        "Spanish"
+    ],
     "specialties":[
         "IELTS",
         "American English",

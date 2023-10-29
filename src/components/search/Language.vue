@@ -1,15 +1,48 @@
-<script setup lang="ts">
-    import { DropDownListComponent as EjsDropdownlist } from "@syncfusion/ej2-vue-dropdowns";
-    const data = [{ languageData : ['English', 'German', 'Bangla', 'Spanish'] }]  
+<script>
+import { DropDownListComponent } from "@syncfusion/ej2-vue-dropdowns";
+
+export default {
+    data() {
+      return {
+        languageData: null
+      };
+    },    
+    mounted() {
+        // loading data Past your API
+        fetch("rihisiDatabase.json")
+          .then((res) => res.json())
+          .then((data) => {
+            this.languageData = data.languageData;
+            console.log();
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+    },
+    components: {
+        'ejs-dropdownlist': DropDownListComponent
+    },
+    data: function() {
+        return {
+            waterMark: 'English',
+            height: '220px',
+            languageData: ["languageData"]
+        };
+    }
+}
 </script>
 
 <template>
     <div id="app" class="bg-white rounded-md border-r p-2">
         <h5 class="uppercase text-sm font-normal text-[#8a959e]">I wnat to learn</h5>
-      <div id='container' style="width:100%;">
-          <ejs-dropdownlist id='dropdownlist' popupHeight="250px" popupWidth="100%" 
-          :dataSource='data[0].languageData' placeholder='English'></ejs-dropdownlist>
-      </div>
+        <div id='container' style="width:100%;">
+        <ejs-dropdownlist 
+            id='languages' 
+            :dataSource='languageData' 
+            :popupHeight='height' 
+            :placeholder='waterMark'>
+        </ejs-dropdownlist>
+        </div>
     </div>
 </template>
 

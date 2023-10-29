@@ -12,7 +12,7 @@
     "@syncfusion/ej2-vue-dropdowns": "^23.1.42",
     "@syncfusion/ej2-vue-grids": "^23.1.42",
     "@syncfusion/ej2-vue-notifications": "^23.1.40",
-    "axios": "^1.5.1",
+    "axios": "^1.6.0",
     "font-awesome": "^4.7.0",
     "vue": "^3.3.4",
     "vue-router": "4"
