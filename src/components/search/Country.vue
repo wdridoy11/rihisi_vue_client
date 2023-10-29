@@ -84,8 +84,6 @@ export default {
     </div>
 </template>
 
-
-
 <style scoped>
     .control-styles {
         margin: 0 auto; 
