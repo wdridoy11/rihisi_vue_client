@@ -9,11 +9,10 @@ export default {
     },    
     mounted() {
         // loading data Past your API
-        fetch("rihisiDatabase.json")
+        fetch("https://rihisiapi.azurewebsites.net/api/language")
           .then((res) => res.json())
           .then((data) => {
-            this.languageData = data.languageData;
-            console.log();
+            this.languageData = data;
           })
           .catch((err) => {
             console.log(err);
@@ -26,7 +25,8 @@ export default {
         return {
             waterMark: 'English',
             height: '220px',
-            languageData: ["languageData"]
+            languageData: ["languageData"],
+            fields: { text: 'name', value: 'languageId' },
         };
     }
 }
@@ -40,6 +40,7 @@ export default {
             id='languages' 
             :dataSource='languageData' 
             :popupHeight='height' 
+            :fields='fields'
             :placeholder='waterMark'>
         </ejs-dropdownlist>
         </div>
