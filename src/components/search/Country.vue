@@ -14,7 +14,7 @@ export default {
     },
     data: function() {
         return {
-            checkFields: { text: 'Name', value: 'Code' },
+            checkFields: { text: 'name', value: 'id' },
             checkWaterMark: 'Select countries',
             popHeight: '350px',
             multiMode: 'CheckBox',
@@ -27,10 +27,11 @@ export default {
     },
     mounted() {
         // loading data Past your API
-        fetch("rihisiDatabase.json")
+        fetch(`${import.meta.env.VITE_DEFAULT_BASE_API}/Countries`)
           .then((res) => res.json())
           .then((data) => {
-            this.countries = data.countries;
+            this.countries = data;
+            // console.log(data);
           })
           .catch((err) => {
             console.log(err);
@@ -72,6 +73,7 @@ export default {
                         :placeholder='checkWaterMark' 
                         :fields='checkFields'
                         :mode='multiMode' 
+                        :countryFields='countries'
                         :popupHeight='popHeight' 
                         :showDropDownIcon='showDropDownIcon' 
                         :showSelectAll='showSelectAll'

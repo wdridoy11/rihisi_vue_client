@@ -9,7 +9,7 @@ export default {
     },    
     mounted() {
         // loading data Past your API
-        fetch("https://rihisiapi.azurewebsites.net/api/language")
+        fetch(`${import.meta.env.VITE_DEFAULT_BASE_API}/language`)
           .then((res) => res.json())
           .then((data) => {
             this.languageData = data;
